@@ -1,0 +1,2 @@
+f1tenth_2dnav
+-DCATKIN_DEVEL_PREFIX=/home/ubuntu/Git/MAP2017/ROS/WS_Nav/devel -DCMAKE_INSTALL_PREFIX=/home/ubuntu/Git/MAP2017/ROS/WS_Nav/install -G Unix Makefiles

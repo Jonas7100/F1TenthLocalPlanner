@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/Git/MAP2017/ROS/WS_Race/install
+
+Name: race
+Description: Description of race
+Version: 0.0.0
+Cflags: -I/home/ubuntu/Git/MAP2017/ROS/WS_Race/install/include
+Libs: -L/home/ubuntu/Git/MAP2017/ROS/WS_Race/install/lib 
+Requires: message_runtime

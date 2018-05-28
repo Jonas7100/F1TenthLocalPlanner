@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<launch>
+  
+  <!-- LiDAR, IMU and Teensy -->
+  <include file="$(find launchcar)/launch/car.launch"/>
+
+  <!-- Transformations for the navigation stack, especially for mapping -->
+  <include file="$(find launchcar)/launch/tf_map.launch"/>
+	
+  <node name="talker" type="talker.py" pkg="race" output="screen"/>
+  <node name="keyboard" type="keyboard.py" pkg="race" output="screen" launch-prefix="xterm -e"/>
+
+  
+</launch>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<launch>
+
+  <arg name="map_name" default="V314.yaml"/>
+  <arg name="speed" default="3.0"/>  
+
+  <!--<node pkg="map_server" type="map_server" 	name="map_server" args="$(find f1tenth_2dnav)/maps/$(arg map_name)"  output="screen">
+    <param name="frame_id" value="/map"/>
+  </node>-->
+
+<group>
+  <!--<param name="tf_prefix" value="realrobot1"/>-->
+
+  <include file="$(find launchcar)/launch/navigation.launch"/>
+
+  <include file="$(find f1tenth_2dnav)/launch/move_base.launch">
+    <arg name="speed" value="$(arg speed)"/>
+    <arg name="map_name" value="$(arg map_name)"/>
+  </include>
+</group>
+
+</launch>

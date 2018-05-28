@@ -1,0 +1,23 @@
+EBandPlannerROS:
+  # Set the acceleration limits of the robot
+  max_acceleration: 2.5
+  max_translational_acceleration: 2.5
+  max_rotational_acceleration: 3.2
+  
+  # Set the velocity limits of the robot
+  max_vel_lin: 0.6
+  min_vel_lin: 0.1
+  max_vel_th: 1.0
+  min_in_place_vel_th: 0.4
+  
+  # Tolerance on achieving a goal
+  yaw_goal_tolerance: 0.05 
+  xy_goal_tolerance: 0.10
+  
+  # PID-parameters
+  k_prop: 4.0
+  k_damp: 3.5
+  Ctrl_Rate: 10.0
+  
+  #Use differential drive
+  differential_drive: True
